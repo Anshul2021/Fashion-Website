@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --nunito: "Nunito", sans-serif;
+  --monster: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+/* ---------header------- */
+
+/* ----------navigation bar------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.navbar .navlist {
+  display: flex;
+  align-items: center;
+  transition: 0.3s linear;
+}
+
+.navbar .navlist a {
+  text-decoration: none;
+  margin: 0px 15px;
+}
+.navbar .navlist a li {
+  list-style: none;
+  color: #434343;
+  font-size: 1.5em;
+  font-family: var(--nunito);
+}
+
+.navbar .navlist a li:hover {
+  color: #ff6b81;
+  transition: 0.2s linear;
+}
+
+.navbar .navlist #shop {
+  font-size: 3em;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.navbar .navlist #shop:hover {
+  color: #0be881;
+  transition: 0.3s linear;
+}
+#hamburger {
+  display: none;
+  font-size: 3em;
+  padding-left: 20px;
+  cursor: pointer;
+}
+#hamburger:hover {
+  color: #e03b8b;
+  transition: 0.3s linear;
+}
+.h-nav-resp {
+  height: 0px;
+}
+
+/* -------------main-------------- */
+main {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 50px 0px;
+  overflow: hidden;
+}
+/* -------------main (Aside) -------------- */
+
+main .aside {
+  width: auto;
+  margin-right: 40px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* -------------main (Aside) left one -------------- */
+
+/* ------------search------------- */
+main .aside .one {
+  background: white;
+  padding: 18px;
+  border-radius: 2px;
+}
+main .aside .one .search {
+  display: flex;
+  justify-content: center;
+}
+main .aside .one .search .product {
+  padding: 12.7px;
+  border: 1px solid grey;
+  border-radius: 0px;
+  font-size: 15px;
+  width: 58%;
+}
+main .aside .one .search button {
+  border: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 12.7px;
+  background-color: #434343;
+  color: white;
+  font-family: var(--nunito);
+  font-size: 15px;
+}
+
+main .aside .one .search button:hover {
+  background-color: #000000;
+  transition: 0.3s linear;
+}
+/* -------------main (Aside) left two & Left three-------------- */
+
+/* ------------categories & Filter------------- */
+main .aside .two .categories,
+main .aside .three .filter {
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px 30px;
+  border-radius: 2px;
+}
+
+main .aside .two .product,
+main .aside .three .filter .color {
+  font-size: 2.5em;
+  font-family: var(--poppins);
+  color: #3a3a3a;
+}
+main .aside .two .sub {
+  position: relative;
+  left: 10%;
+}
+main .aside .two .inner,
+main .aside .two .sub,
+main .aside .three .filter .list {
+  font-size: 1.5em;
+  list-style: none;
+  font-family: var(--nunito);
+  color: #434343;
+  line-height: 2.3;
+}
+main .aside .two .inner:hover,
+main .aside .two .sub:hover,
+main .aside .three .filter .list:hover {
+  color: #602bb7;
+  cursor: pointer;
+}
+/* -------------main (Right) -------------- */
+main .right {
+  width: 70%;
+  padding: 50px;
+  margin-right: 50px;
+  background-color: white;
+}
+main .right .men {
+  font-size: 3em;
+  color: #434343;
+  font-family: var(--monster);
+}
+main .right .explain {
+  margin-top: 25px;
+}
+main .right .para {
+  font-size: 18px;
+  color: #3a3a3a;
+  font-family: var(--nunito);
+  line-height: 2;
+}
+main .right .result {
+  display: inline-block;
+}
+#dropbox {
+  font-size: 18px;
+  font-family: var(--nunito);
+  color: #666666;
+  background-color: #fafafa;
+  padding: 5px;
+  float: right;
+}
+
+/* --------------grid images with subtitle----------- */
+main .images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 5rem;
+  grid-column-gap: 3rem;
+  grid-auto-flow: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.images img {
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: large;
+  height: fit-content;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+main .images .type1 {
+  color: #4b4f58;
+}
+
+main .images .name1 {
+  color: #3a3a3a;
+}
+
+main .images .star {
+  color: rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+}
+
+main .images .star :nth-child(1):hover {
+  color: burlywood;
+}
+
+main .images .star :nth-child(2):hover {
+  color: burlywood;
+}
+
+main .images .star :nth-child(3):hover {
+  color: burlywood;
+}
+
+main .images .star :nth-child(4):hover {
+  color: burlywood;
+}
+
+main .images .star :nth-child(5):hover {
+  color: burlywood;
+}
+/* ----------------footer---------------- */
+footer .site-primary-footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #f4f4f4;
+}
+
+footer .Connect {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+}
+
+footer .Connection .bolder {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 3;
+}
+
+footer .Follow .right_first button {
+  border: 2px solid black;
+  border-radius: 50%;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
+  background-color: #c2c2c273;
+  cursor: pointer;
+}
+
+footer .Follow .right_first .social1:hover {
+  color: #4267b2;
+}
+
+footer .Follow .right_first .social2:hover {
+  color: #1da1f2;
+}
+
+footer .Follow .right_first .social3:hover {
+  color: #c13584;
+}
+
+footer .Follow .right_first .social4:hover {
+  color: #ff0000;
+}
+
+footer .Follow .right_first .social5:hover {
+  color: #0077b5;
+}
+
+footer .site-secondary-footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+footer .site-secondary-footer .down {
+  font-size: 1.8rem;
+  font-family: var(--nunito);
+  padding: 0rem 6rem;
+  text-align: center;
+}

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --nunito: "Nunito", sans-serif;
+  --monster: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+/* ---------header------- */
+
+/* ----------navigation bar------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.navbar .navlist {
+  display: flex;
+  align-items: center;
+  transition: 0.3s linear;
+}
+
+.navbar .navlist a {
+  text-decoration: none;
+  margin: 0px 15px;
+}
+.navbar .navlist a li {
+  list-style: none;
+  color: #434343;
+  font-size: 1.5em;
+  font-family: var(--nunito);
+}
+
+.navbar .navlist a li:hover {
+  color: #ff6b81;
+  transition: 0.2s linear;
+}
+
+.navbar .navlist #shop {
+  font-size: 3em;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.navbar .navlist #shop:hover {
+  color: #0be881;
+  transition: 0.3s linear;
+}
+#hamburger {
+  display: none;
+  font-size: 3em;
+  padding-left: 20px;
+  cursor: pointer;
+}
+#hamburger:hover {
+  color: #e03b8b;
+  transition: 0.3s linear;
+}
+.h-nav-resp {
+  height: 0px;
+}
+
+/* ------------section (contact)---------------- */
+section .contact {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+.contact .together {
+  width: 60%;
+}
+.contact .text-l {
+  font-size: 7em;
+  font-family: var(--monster);
+  padding-bottom: 50px;
+}
+.contact .text-lm {
+  font-size: 3em;
+  font-family: var(--monster);
+  padding-bottom: 50px;
+}
+.contact .text-s {
+  font-size: 1.8em;
+  line-height: 1.8;
+  color: #3a3a3a;
+  font-family: var(--nunito);
+  padding-bottom: 50px;
+}
+
+/* ----------input---------- */
+.name,
+.email {
+  width: 50%;
+  font-family: var(--nunito);
+}
+.message {
+  width: 100%;
+  font-family: var(--nunito);
+}
+.inputs .style {
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* --------------send message (submit)-------- */
+.submit {
+  border: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 12.7px;
+  background-color: #434343;
+  color: white;
+  font-family: var(--nunito);
+  font-size: 15px;
+}
+
+.submit:hover {
+  background-color: #000000;
+  transition: 0.3s linear;
+}
+
+/* ---------------background (latest)--------- */
+.latest {
+  width: 100%;
+  height: 65vh;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(30, 10, 50, 0.5)
+    ),
+    url(../images/about\ bg.jpg);
+}
+/* ----------------footer---------------- */
+footer .site-primary-footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #f4f4f4;
+}
+
+footer .Connect {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+}
+
+footer .Connection .bolder {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 3;
+}
+
+footer .Follow .right_first button {
+  border: 2px solid black;
+  border-radius: 50%;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
+  background-color: #c2c2c273;
+  cursor: pointer;
+}
+
+footer .Follow .right_first .social1:hover {
+  color: #4267b2;
+}
+
+footer .Follow .right_first .social2:hover {
+  color: #1da1f2;
+}
+
+footer .Follow .right_first .social3:hover {
+  color: #c13584;
+}
+
+footer .Follow .right_first .social4:hover {
+  color: #ff0000;
+}
+
+footer .Follow .right_first .social5:hover {
+  color: #0077b5;
+}
+
+footer .site-secondary-footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+footer .site-secondary-footer .down {
+  font-size: 1.8rem;
+  font-family: var(--nunito);
+  padding: 0rem 6rem;
+  text-align: center;
+}
